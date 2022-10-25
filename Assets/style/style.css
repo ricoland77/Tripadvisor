@@ -166,9 +166,9 @@ a :hover {
 .secondPict img {
   display: flex;
   width: 310px;
-  height: 185px;
-  /* margin-left: 2px; */
-  margin-bottom: 10px;
+  height: 187px;
+
+  margin-bottom: 6px;
   box-sizing: border-box;
 }
 
