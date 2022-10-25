@@ -1,6 +1,5 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: wheat;
 }
 
 .container {
@@ -11,6 +10,15 @@ body {
 h1 {
   font-size: 49px;
   font-weight: 700;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+p {
+  line-height: 24px;
 }
 
 /* header */
@@ -37,11 +45,26 @@ header img {
   justify-content: flex-end;
 }
 
+.pictos i {
+  margin-right: 8px;
+  line-height: 25px;
+}
+
 .alignPictos {
   display: flex;
   justify-content: space-around;
-  margin-right: 40px;
+  margin-left: 50px;
   box-sizing: border-box;
+}
+
+.alignPictos:hover {
+  display: flex;
+  align-items: center;
+  background-color: rgb(125, 125, 125);
+  color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
 }
 
 .connect {
@@ -88,18 +111,23 @@ a :hover {
 
 .search {
   display: flex;
-  justify-content: space-between;
   margin-top: 40px;
 }
 
 .searchTwo {
   display: flex;
-  justify-content: space-between;
   margin-top: 10px;
+}
+
+.search a {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
 }
 
 .bottonSearch {
   background-color: white;
+  width: auto;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -111,12 +139,53 @@ a :hover {
   margin-left: 10px;
 }
 
+.bottonSearch p {
+  /* margin-right: 124px; */
+}
+
 .bottonSearch:hover {
   background-color: black;
   color: white;
 }
 
 .bottonSearch p:hover {
-  background-color: black;
   color: white;
+}
+
+.pictures {
+  margin-top: 40px;
+  display: flex;
+  gap: 5px;
+}
+
+.pictures img {
+  height: 380px;
+  flex: 1;
+}
+
+.secondPict img {
+  display: flex;
+  width: 310px;
+  height: 185px;
+  /* margin-left: 2px; */
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.navCity p {
+  font-size: 10px;
+}
+
+.navCity {
+  display: flex;
+  justify-content: space-between;
+}
+
+.informations h2 {
+  margin-top: 30px;
+}
+
+.informations p {
+  margin-top: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
