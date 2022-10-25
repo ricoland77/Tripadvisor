@@ -1,0 +1,64 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: wheat;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* header */
+
+header {
+  height: 70px;
+  background-color: white;
+  margin-top: 50px;
+}
+
+header img {
+  height: 30px;
+}
+
+.allHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pictos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.alignPictos {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 40px;
+  box-sizing: border-box;
+}
+
+.connect {
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.alignPictos span {
+  color: white;
+  font-size: 14px;
+}
+
+nav p {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a :hover {
+  background-color: gray;
+}
