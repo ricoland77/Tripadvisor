@@ -18,6 +18,12 @@ h2 {
   margin-top: 50px;
 }
 
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
 p {
   line-height: 24px;
 }
@@ -193,9 +199,33 @@ a :hover {
 
 /* Section Carrousel */
 
+/* <!-- Première colonne --> */
+.first-column .title {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.first-column .text {
+  color: #333333;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.first-column .link {
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: underline;
+}
+
+/* <!-- Deuxième colonne --> */
 /* parent */
 .carrousel {
-  background-color: green;
+  width: 1024px;
+  border: 2px solid;
+  /* background-color: green; */
   display: flex;
   overflow-x: scroll;
   gap: 10px;
@@ -204,13 +234,13 @@ a :hover {
 
 /* enfant */
 .first-column {
-  background-color: yellow;
+  /* background-color: yellow; */
   flex: 1;
 }
 
 /* enfant */
 .carrousel .second-column {
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   flex-direction: row;
   flex: 3;
@@ -219,18 +249,25 @@ a :hover {
   box-sizing: border-box;
 }
 
-.carrousel .second-column .image {
-  background-color: gray;
-  width: 270px;
-  height: 205px;
+.second-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-column .image {
+  background-image: url(../img/plageBonSecours.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 215px;
   border-radius: 10px;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .second-column .text-img {
   background-color: lavender;
-  width: 270px;
   display: flex;
   flex-direction: column;
 }
@@ -238,13 +275,21 @@ a :hover {
 /* compteur */
 .count {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  font-size: 14px;
 }
 
 .count .number {
   margin-left: 10px;
+  font-size: 14px;
 }
 
 .count i {
   color: rgb(0, 106, 0);
+}
+
+.text-img p {
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 5px;
 }
