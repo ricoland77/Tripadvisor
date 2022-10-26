@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Trip Sans Regular";
 }
 
 .container {
@@ -10,12 +10,14 @@ body {
 h1 {
   font-size: 49px;
   font-weight: 700;
+  font-family: "Trip Sans Medium";
 }
 
 h2 {
   font-size: 28px;
   font-weight: 700;
   margin-top: 50px;
+  font-family: "Trip Sans Medium";
 }
 
 h3 {
@@ -33,60 +35,48 @@ p {
 header {
   height: 70px;
   background-color: white;
-  margin-top: 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.first-section {
+  margin-top: 70px;
 }
 
 header img {
   height: 30px;
+  cursor: pointer;
+  margin-top: 9px;
 }
 
-.allHeader {
+.primary-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 40px;
+  font-family: "Trip Sans Medium";
+  cursor: pointer;
 }
 
-.pictos {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+.primary-nav .menu-items:hover {
+  padding: 7px;
+  border-radius: 15px;
+  background-color: #ededed;
 }
 
-.pictos i {
-  margin-right: 8px;
-  line-height: 25px;
-}
-
-.alignPictos {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 50px;
-  box-sizing: border-box;
-}
-
-.alignPictos:hover {
-  display: flex;
-  align-items: center;
-  background-color: rgb(125, 125, 125);
+.primary-nav button {
+  font-size: 14px;
+  background: black;
   color: white;
-  width: 100px;
-  height: 30px;
-  border-radius: 10px;
-}
-
-.connect {
-  background-color: black;
-  padding: 10px 20px;
+  padding: 15px;
   border-radius: 20px;
+  cursor: pointer;
+  border: none;
 }
 
-.alignPictos span {
-  color: white;
-  font-size: 14px;
-}
-
-nav p {
-  font-size: 14px;
+.top-menu {
+  display: flex;
+  justify-content: space-between;
 }
 
 a {
@@ -146,10 +136,6 @@ a :hover {
   margin-left: 10px;
 }
 
-.bottonSearch p {
-  /* margin-right: 124px; */
-}
-
 .bottonSearch:hover {
   background-color: black;
   color: white;
@@ -159,24 +145,40 @@ a :hover {
   color: white;
 }
 
-.pictures {
-  margin-top: 40px;
+.images-bloc {
+  height: 400px;
+  /* background-color: red; */
   display: flex;
   gap: 5px;
+  margin-top: 50px;
 }
 
-.pictures img {
-  height: 380px;
+.img-left {
+  background-image: url(../img/fort-national.jpg);
+  background-size: cover;
+  background-position: center;
+  flex: 2;
+}
+
+.img-right {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
-.secondPict img {
-  display: flex;
-  width: 310px;
-  height: 187px;
+.img-top {
+  background-image: url(../img/la-cite-d-aleth.jpg);
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+}
 
-  margin-bottom: 6px;
-  box-sizing: border-box;
+.img-bottom {
+  background-image: url(../img/st-vincent-cathedral.jpg);
+  background-size: cover;
+  background-position: center;
+  flex: 1;
 }
 
 .navCity p {
@@ -193,13 +195,14 @@ a :hover {
 }
 
 .informations p {
+  color: #333333;
   margin-top: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /* Section Carrousel */
-
 /* <!-- Première colonne --> */
+
 .first-column .title {
   font-size: 24px;
   line-height: 29px;
@@ -207,8 +210,8 @@ a :hover {
 
 .first-column .text {
   color: #333333;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 24px;
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-top: 30px;
   margin-bottom: 15px;
@@ -224,8 +227,6 @@ a :hover {
 /* parent */
 .carrousel {
   width: 1024px;
-  border: 2px solid;
-  /* background-color: green; */
   display: flex;
   overflow-x: scroll;
   gap: 10px;
@@ -234,42 +235,71 @@ a :hover {
 
 /* enfant */
 .first-column {
-  /* background-color: yellow; */
   flex: 1;
+}
+
+.first-column .image {
+  width: 230px;
 }
 
 /* enfant */
 .carrousel .second-column {
-  /* background-color: red; */
   display: flex;
   flex-direction: row;
   flex: 3;
-  gap: 10px;
+  gap: 15px;
   flex-shrink: 0;
   box-sizing: border-box;
 }
 
-.second-column {
-  display: flex;
-  flex-direction: column;
-}
-
 .second-column .image {
+  position: relative;
   background-image: url(../img/plageBonSecours.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 215px;
-  border-radius: 10px;
+  width: 270px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  flex: 2;
 }
 
-.second-column .text-img {
-  background-color: lavender;
+.place {
+  cursor: pointer;
+}
+
+.logo-tripad {
+  position: absolute;
+  color: #35e0a1;
+  background-color: #35e0a1;
+  object-fit: contain;
+  width: 30px;
+  height: 40px;
+  border-radius: 20px 20px 10px 10px;
+  left: 10px;
+  bottom: 10px;
+}
+
+.heart {
+  position: absolute;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+}
+
+.second-column .text {
+  width: 270px;
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 /* compteur */
@@ -292,4 +322,28 @@ a :hover {
   font-size: 15px;
   line-height: 20px;
   margin-top: 5px;
+}
+
+/* footer */
+
+footer {
+  /* background-color: lavender; */
+  height: 160px;
+}
+
+footer div p {
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+footer img {
+  height: 40px;
+  margin-top: 60px;
+  margin-right: 10px;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -7,7 +7,7 @@
 
     <!-- import de mes fontes Tripadvisor -->
 
-    <link rel="stylesheet" href="./Assets/fonts/font.css" />
+    <link rel="stylesheet" href="./Assets/style/font.css" />
 
     <!-- Import CSS -->
     <link rel="stylesheet" href="./Assets/style/reset.css" />
@@ -23,46 +23,33 @@
     />
     <title>Tourisme à Saint-Malo 2022 : Visiter Saint-Malo Tripadvisor</title>
   </head>
+
   <body>
     <header>
       <div class="container">
-        <div class="allHeader">
-          <a href="https://www.tripadvisor.fr/" target="_blank"
-            ><img
-              src="./Assets/img/Tripadvisor_lockup_horizontal_secondary_registered.svg"
-              alt="Logo-Tripadvisor"
-          /></a>
-          <nav class="pictos">
-            <a href="https://www.tripadvisor.fr/UserReview" target="_blank"
-              ><div class="alignPictos">
-                <i class="fa-solid fa-pencil"></i>
-                <p>Avis</p>
-              </div></a
-            >
-            <a href="https://www.tripadvisor.fr/Trips" target="_blank"
-              ><div class="alignPictos">
-                <i class="fa-regular fa-bell"></i>
-                <p>Alertes</p>
-              </div></a
-            >
-            <a
-              href="https://www.tripadvisor.fr/RegistrationController?flow=core_combined&pid=40187&returnTo=%2FInbox&fullscreen=true"
-              target="_blank"
-              ><div class="alignPictos">
-                <i class="fa-solid fa-heart"></i>
-                <p>Favoris</p>
-              </div></a
-            >
-
-            <div class="alignPictos">
-              <span><p class="connect">Connectez-vous</p></span>
+        <div class="top-menu">
+          <img
+            src="./Assets/img/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+            alt="Logo Tripadvisor"
+          />
+          <nav class="primary-nav">
+            <div class="menu-items">
+              <i class="fa-regular fa-comment"></i> <span>Avis</span>
             </div>
+            <div class="menu-items">
+              <i class="fa-regular fa-heart"></i> <span>Voyages</span>
+            </div>
+            <div class="menu-items">
+              <i class="fa-regular fa-bell"></i> <span>Alertes</span>
+            </div>
+            <button>Connectez-vous</button>
           </nav>
         </div>
       </div>
     </header>
+
     <main class="container">
-      <section>
+      <section class="first-section">
         <h1><span>Explorez</span> Saint-Malo</h1>
         <p class="baseline">
           Les revenus influencent le choix des expériences présentées sur cette
@@ -132,17 +119,12 @@
           </div>
         </nav>
 
-        <div class="pictures">
-          <img
-            src="./Assets/img/plageBonSecours.jpg"
-            alt="Plage de Saint-Malo"
-          />
-          <div class="secondPict">
-            <img
-              src="./Assets/img/fort-national.jpg"
-              alt="Fort national de Saint-Malo"
-            />
-            <img src="./Assets/img/la-cite-d-aleth.jpg" alt="La cité d'Alet" />
+        <!-- Grosses images -->
+        <div class="images-bloc">
+          <div class="img-left"></div>
+          <div class="img-right">
+            <div class="img-top"></div>
+            <div class="img-bottom"></div>
           </div>
         </div>
 
@@ -173,6 +155,8 @@
       <section class="carrousel">
         <!-- Première colonne -->
         <div class="first-column">
+          <div class="image"></div>
+
           <p class="title">Se divertir</p>
           <p class="text">
             Des lieux à voir, des rues à explorer et des expériences
@@ -182,12 +166,24 @@
         </div>
 
         <!-- Seconde colonne -->
-
         <div class="second-column">
-          <!-- image02 -->
-          <div class="image">
+          <!-- Premier lieu -->
+          <div class="place">
+            <!-- image01 -->
+            <div class="image">
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+
+              <img
+                class="logo-tripad"
+                src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg"
+                alt="Logo Tripadvisor"
+              />
+            </div>
+
             <!-- texte sous image -->
-            <div class="text-img">
+            <div class="text">
               <h3>Plage de Bonsecours</h3>
               <div class="count">
                 <i class="fa-solid fa-circle"></i>
@@ -203,10 +199,23 @@
             </div>
           </div>
 
-          <!-- image02 -->
-          <div class="image">
+          <!-- Premier lieu -->
+          <div class="place">
+            <!-- image01 -->
+            <div class="image">
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+
+              <img
+                class="logo-tripad"
+                src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg"
+                alt="Logo Tripadvisor"
+              />
+            </div>
+
             <!-- texte sous image -->
-            <div class="text-img">
+            <div class="text">
               <h3>Plage de Bonsecours</h3>
               <div class="count">
                 <i class="fa-solid fa-circle"></i>
@@ -222,10 +231,23 @@
             </div>
           </div>
 
-          <!-- image03 -->
-          <div class="image">
+          <!-- Premier lieu -->
+          <div class="place">
+            <!-- image01 -->
+            <div class="image">
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+
+              <img
+                class="logo-tripad"
+                src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg"
+                alt="Logo Tripadvisor"
+              />
+            </div>
+
             <!-- texte sous image -->
-            <div class="text-img">
+            <div class="text">
               <h3>Plage de Bonsecours</h3>
               <div class="count">
                 <i class="fa-solid fa-circle"></i>
@@ -241,10 +263,215 @@
             </div>
           </div>
 
-          <!-- image04 -->
-          <div class="image">
+          <!-- Premier lieu -->
+          <div class="place">
+            <!-- image01 -->
+            <div class="image">
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+
+              <img
+                class="logo-tripad"
+                src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg"
+                alt="Logo Tripadvisor"
+              />
+            </div>
+
             <!-- texte sous image -->
-            <div class="text-img">
+            <div class="text">
+              <h3>Plage de Bonsecours</h3>
+              <div class="count">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle-half-stroke"> </i>
+                <p class="number">141 417</p>
+              </div>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </div>
+          </div>
+
+          <!-- Premier lieu -->
+          <div class="place">
+            <!-- image01 -->
+            <div class="image">
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+
+              <img
+                class="logo-tripad"
+                src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg"
+                alt="Logo Tripadvisor"
+              />
+            </div>
+
+            <!-- texte sous image -->
+            <div class="text">
+              <h3>Plage de Bonsecours</h3>
+              <div class="count">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle-half-stroke"> </i>
+                <p class="number">141 417</p>
+              </div>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </div>
+          </div>
+
+          <!-- Premier lieu -->
+          <div class="place">
+            <!-- image01 -->
+            <div class="image">
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+
+              <img
+                class="logo-tripad"
+                src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg"
+                alt="Logo Tripadvisor"
+              />
+            </div>
+
+            <!-- texte sous image -->
+            <div class="text">
+              <h3>Plage de Bonsecours</h3>
+              <div class="count">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle-half-stroke"> </i>
+                <p class="number">141 417</p>
+              </div>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </div>
+          </div>
+
+          <!-- Premier lieu -->
+          <div class="place">
+            <!-- image01 -->
+            <div class="image">
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+
+              <img
+                class="logo-tripad"
+                src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg"
+                alt="Logo Tripadvisor"
+              />
+            </div>
+
+            <!-- texte sous image -->
+            <div class="text">
+              <h3>Plage de Bonsecours</h3>
+              <div class="count">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle-half-stroke"> </i>
+                <p class="number">141 417</p>
+              </div>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </div>
+          </div>
+
+          <!-- Premier lieu -->
+          <div class="place">
+            <!-- image01 -->
+            <div class="image">
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+
+              <img
+                class="logo-tripad"
+                src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg"
+                alt="Logo Tripadvisor"
+              />
+            </div>
+
+            <!-- texte sous image -->
+            <div class="text">
+              <h3>Plage de Bonsecours</h3>
+              <div class="count">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle-half-stroke"> </i>
+                <p class="number">141 417</p>
+              </div>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </div>
+          </div>
+
+          <!-- Premier lieu -->
+          <div class="place">
+            <!-- image01 -->
+            <div class="image">
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+
+              <img
+                class="logo-tripad"
+                src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg"
+                alt="Logo Tripadvisor"
+              />
+            </div>
+
+            <!-- texte sous image -->
+            <div class="text">
+              <h3>Plage de Bonsecours</h3>
+              <div class="count">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle-half-stroke"> </i>
+                <p class="number">141 417</p>
+              </div>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </div>
+          </div>
+
+          <!-- Premier lieu -->
+          <div class="place">
+            <!-- image01 -->
+            <div class="image">
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+
+              <img
+                class="logo-tripad"
+                src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg"
+                alt="Logo Tripadvisor"
+              />
+            </div>
+
+            <!-- texte sous image -->
+            <div class="text">
               <h3>Plage de Bonsecours</h3>
               <div class="count">
                 <i class="fa-solid fa-circle"></i>
@@ -262,6 +489,24 @@
         </div>
       </section>
     </main>
-    <footer>mon footer</footer>
+    <footer>
+      <div>
+        <img
+          src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg"
+          alt="logo Tripadvisor"
+        />
+        <p>
+          Made at
+          <a href="https://www.lereacteur.io/" target="_blank">Le Reacteur</a>
+          by
+          <a
+            href="https://github.com/ricoland77?tab=repositories"
+            target="_blank"
+            >RicoLand</a
+          >
+          - 2022
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
