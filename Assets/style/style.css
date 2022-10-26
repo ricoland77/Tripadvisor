@@ -15,6 +15,7 @@ h1 {
 h2 {
   font-size: 28px;
   font-weight: 700;
+  margin-top: 50px;
 }
 
 p {
@@ -188,4 +189,62 @@ a :hover {
 .informations p {
   margin-top: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Section Carrousel */
+
+/* parent */
+.carrousel {
+  background-color: green;
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* enfant */
+.first-column {
+  background-color: yellow;
+  flex: 1;
+}
+
+/* enfant */
+.carrousel .second-column {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  flex: 3;
+  gap: 10px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.carrousel .second-column .image {
+  background-color: gray;
+  width: 270px;
+  height: 205px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.second-column .text-img {
+  background-color: lavender;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* compteur */
+.count {
+  display: flex;
+  align-items: center;
+}
+
+.count .number {
+  margin-left: 10px;
+}
+
+.count i {
+  color: rgb(0, 106, 0);
 }
