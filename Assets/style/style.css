@@ -86,14 +86,6 @@ a {
   color: black;
 }
 
-a :hover {
-  background-color: gray;
-}
-
-.research {
-  background-color: blueviolet;
-}
-
 /* Main */
 .container h1 span {
   color: #ff5e5e;
@@ -113,19 +105,14 @@ a :hover {
 }
 
 .search {
-  display: flex;
   margin-top: 40px;
-  gap: 10px;
-}
-
-.searchTwo {
   display: flex;
-  margin-top: 10px;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
-.searchTwo p {
-  line-height: 16px;
+.search p {
+  line-height: 15px;
 }
 
 .search a {
@@ -136,15 +123,19 @@ a :hover {
 
 .bottonSearch {
   background-color: white;
-  width: auto;
-  height: 50px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   border: black solid 2px;
   border-radius: 10px;
   padding: 0px 10px;
   flex: 1;
+}
+
+.bottonSearch p,
+i {
+  margin-top: 8px;
 }
 
 .bottonSearch:hover {
@@ -152,23 +143,37 @@ a :hover {
   color: white;
 }
 
-.bottonSearch p:hover {
-  color: white;
-}
-
 .images-bloc {
+  /* border: black solid 2px; */
   height: 400px;
-  /* background-color: red; */
   display: flex;
   gap: 5px;
   margin-top: 50px;
 }
 
 .img-left {
+  display: flex;
   background-image: url(../img/fort-national.jpg);
   background-size: cover;
   background-position: center;
   flex: 2;
+  position: relative;
+}
+
+.img-left i {
+  font-size: 20px;
+}
+
+.buttom-img {
+  font-size: 11px;
+  color: white;
+  background-color: black;
+  padding: 4px 6px;
+  border-radius: 20px;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  cursor: pointer;
 }
 
 .img-right {
@@ -194,6 +199,8 @@ a :hover {
 
 .navCity p {
   font-size: 10px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 .navCity {
@@ -202,7 +209,7 @@ a :hover {
 }
 
 .informations h2 {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .informations p {
@@ -237,10 +244,8 @@ a :hover {
 /* <!-- Deuxième colonne --> */
 /* parent */
 .carrousel {
-  width: 1024px;
   display: flex;
-  overflow-x: scroll;
-  gap: 10px;
+  gap: 51px;
   margin-top: 15px;
 }
 
@@ -255,6 +260,7 @@ a :hover {
 
 /* enfant */
 .carrousel .second-column {
+  overflow-x: scroll;
   display: flex;
   flex-direction: row;
   flex: 3;
@@ -268,22 +274,18 @@ a :hover {
   background-image: url(../img/plageBonSecours.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  width: 270px;
+  background-position: left;
+  width: 100%;
   height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  flex: 2;
 }
 
 .place {
+  width: calc((100% / 3) + 10px);
   cursor: pointer;
 }
 
 .logo-tripad {
   position: absolute;
-  color: #35e0a1;
   background-color: #35e0a1;
   object-fit: contain;
   width: 30px;
@@ -298,7 +300,6 @@ a :hover {
   background-color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -307,7 +308,7 @@ a :hover {
 }
 
 .second-column .text {
-  width: 270px;
+  width: 233.23px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -338,7 +339,7 @@ a :hover {
 /* footer */
 
 footer {
-  /* background-color: lavender; */
+  background-color: lavender;
   height: 160px;
 }
 
@@ -382,8 +383,18 @@ footer div {
 
   .first-section h1 {
     font-size: 39px;
-    margin: 15px;
+    margin-left: 15px;
     margin-top: 80px;
+  }
+
+  .first-section p {
+    font-size: 15px;
+    margin-top: 15px;
+    line-height: 18px;
+  }
+  .first-section a {
+    font-size: 15px;
+    margin: 15px;
   }
 
   nav .search {
@@ -445,7 +456,7 @@ footer div {
 }
 
 /* medias Query 1184px */
-@media (min-width: 1484px) and (max-width: 2000px) {
+@media (min-width: 1484px) and (max-width: 2400px) {
   body {
     background-color: #4cef3d;
   }
