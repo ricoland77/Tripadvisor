@@ -1,5 +1,10 @@
 body {
   font-family: "Trip Sans Regular";
+  font-family: "tripadvisor-font";
+}
+
+.icons {
+  font-family: "tripadvisor-font";
 }
 
 .container {
@@ -351,24 +356,98 @@ footer div {
 
 /* medias Query 768px */
 @media (max-width: 768px) {
+  body {
+    background-color: #35e0a1;
+  }
+
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
   .primary-nav {
     display: none;
   }
 
   .top-menu {
-    border: solid 2px black;
+    /* border: solid 2px black; */
     justify-content: space-around;
     align-items: center;
+  }
+
+  .first-section h1 {
+    font-size: 39px;
+  }
+
+  nav .search {
+    display: none;
+  }
+
+  .img-right {
+    display: none;
+  }
+
+  .carrousel {
+    flex-direction: column;
   }
 }
 
 /* medias Query 1024px */
-@media (min-width: 768px), (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: #ff5e5e;
+  }
+
   .top-menu .fa-line {
+    display: none;
+  }
+
+  .top-menu .fa-magnifying-glass {
     display: none;
   }
 }
 
 /* medias Query 1184px */
-@media (min-width: 1024px), (max-width: 1184px) {
+@media (min-width: 1024px) and (max-width: 1184px) {
+  body {
+    background-color: #ef3da2;
+  }
+
+  .top-menu .fa-line {
+    display: none;
+  }
+
+  .top-menu .fa-magnifying-glass {
+    display: none;
+  }
+}
+
+/* medias Query 1184px */
+@media (min-width: 1184px) and (max-width: 1484px) {
+  body {
+    background-color: #efb43d;
+  }
+
+  .top-menu .fa-line {
+    display: none;
+  }
+
+  .top-menu .fa-magnifying-glass {
+    display: none;
+  }
+}
+
+/* medias Query 1184px */
+@media (min-width: 1484px) and (max-width: 2000px) {
+  body {
+    background-color: #4cef3d;
+  }
+
+  .top-menu .fa-line {
+    display: none;
+  }
+
+  .top-menu .fa-magnifying-glass {
+    display: none;
+  }
 }
