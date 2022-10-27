@@ -77,6 +77,7 @@ header img {
 .top-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 a {
@@ -346,4 +347,28 @@ footer div {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* medias Query 768px */
+@media (max-width: 768px) {
+  .primary-nav {
+    display: none;
+  }
+
+  .top-menu {
+    border: solid 2px black;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+/* medias Query 1024px */
+@media (min-width: 768px), (max-width: 1024px) {
+  .top-menu .fa-line {
+    display: none;
+  }
+}
+
+/* medias Query 1184px */
+@media (min-width: 1024px), (max-width: 1184px) {
 }
