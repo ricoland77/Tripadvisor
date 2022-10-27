@@ -1,10 +1,6 @@
 body {
   font-family: "Trip Sans Regular";
-  font-family: "tripadvisor-font";
-}
-
-.icons {
-  font-family: "tripadvisor-font";
+  /* font-family: "tripadvisor-font"; */
 }
 
 .container {
@@ -112,14 +108,24 @@ a :hover {
   text-decoration-line: underline;
 }
 
+.bottonSearch i {
+  font-size: 22px;
+}
+
 .search {
   display: flex;
   margin-top: 40px;
+  gap: 10px;
 }
 
 .searchTwo {
   display: flex;
   margin-top: 10px;
+  gap: 10px;
+}
+
+.searchTwo p {
+  line-height: 16px;
 }
 
 .search a {
@@ -139,7 +145,6 @@ a :hover {
   border-radius: 10px;
   padding: 0px 10px;
   flex: 1;
-  margin-left: 10px;
 }
 
 .bottonSearch:hover {
@@ -377,6 +382,8 @@ footer div {
 
   .first-section h1 {
     font-size: 39px;
+    margin: 15px;
+    margin-top: 80px;
   }
 
   nav .search {
@@ -395,14 +402,14 @@ footer div {
 /* medias Query 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
-    background-color: #ff5e5e;
+    background-color: lightsalmon;
   }
 
-  .top-menu .fa-line {
+  .top-menu .e035 {
     display: none;
   }
 
-  .top-menu .fa-magnifying-glass {
+  .top-menu .e056 {
     display: none;
   }
 }
@@ -413,11 +420,11 @@ footer div {
     background-color: #ef3da2;
   }
 
-  .top-menu .fa-line {
+  .top-menu .e035 {
     display: none;
   }
 
-  .top-menu .fa-magnifying-glass {
+  .top-menu .e056 {
     display: none;
   }
 }
@@ -428,11 +435,11 @@ footer div {
     background-color: #efb43d;
   }
 
-  .top-menu .fa-line {
+  .top-menu .e035 {
     display: none;
   }
 
-  .top-menu .fa-magnifying-glass {
+  .top-menu .e056 {
     display: none;
   }
 }
@@ -443,11 +450,11 @@ footer div {
     background-color: #4cef3d;
   }
 
-  .top-menu .fa-line {
+  .top-menu .e035 {
     display: none;
   }
 
-  .top-menu .fa-magnifying-glass {
+  .top-menu .e056 {
     display: none;
   }
 }
